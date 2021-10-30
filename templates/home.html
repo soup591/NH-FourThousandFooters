@@ -1,0 +1,19 @@
+{% extends "layout.html" %} 
+
+{% block content %}
+    {% for mountain in mountains %}
+    <article class="media content-section">
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2">{{ mountain.name.title() }}</a>
+            <small class="text-muted">{{ mountain.prominence }} feet of prominence.</small>
+          </div>
+          <h2><a class="article-title"">ELEVATION: {{ mountain.elevation }}</a> feet</h2>
+          <input type="checkbox" id="checkbox" value="Complete">
+          <label for="checkbox">Hiked</label>
+          <p class="article-content">Difficulty: {{ mountain.difficulty}}</p>
+        </div>
+      </article>
+            
+    {% endfor %}
+{% endblock content %}

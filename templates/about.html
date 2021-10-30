@@ -1,0 +1,15 @@
+<!-- 
+    We use  extends "layout.html"  to import the layout template into
+    this page, including bootstrap Java and CSS to minimize repeating code
+    on all of our future pages.
+-->
+{% extends "layout.html" %}
+<!-- We add in specific content for the home page-->
+{% block content %}
+    <h1>About Page</h1>
+    <p>This webpage was created as a project to learn how to code.<br>The 
+        backend of this webpage is running on <mark>Flask</mark>, a Python 
+        module.<br>The front-end is programmed in HTML, CSS 
+        and JavaScript.
+    </p>
+{% endblock content %}
