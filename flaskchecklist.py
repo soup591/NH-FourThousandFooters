@@ -26,17 +26,15 @@ app.config['SECRET_KEY'] = '6d690f9e5a88923bc1ebeecced7d457f'
 Created a function to return various strings for difficulty depending 
 the rating it was given in the dictionary.
 """
-# THIS IS WHERE THE difficulty_check() function WAS!
-# THIS IS WHERE THE MOUNTAINS DICT WAS!
 
 # We use the .route decorator to set destination for various 
-# pages in Flask. Below, the "/" parameter is for the home page.
+# pages in Flask. Below, the "/" and "/home/" parameters are for the home page.
 @app.route("/")
 @app.route("/home/")
 def home():
     return render_template("home.html", mountains=mountains)
 
-# This .route decorator is for the About page
+# About page route decorator.
 @app.route("/about/")
 def about_info():
     return render_template("about.html")

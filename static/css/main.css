@@ -1,7 +1,9 @@
 body {
-    background: #fafafa;
+    background-image: "{{ url_for('static', filename='/images/nh_4k_view_1.jpg') }}"; 
+    background: #f7eded;
     color: #333333;
     margin-top: 5rem;
+
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -31,13 +33,22 @@ body {
     border-radius: 3px;
     margin-bottom: 20px;
   }
+
+  .center {
+    display: block;
+    border-radius: 8px;
+    margin-left: 16%;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+  }
   
   .article-title {
     color: #444444;
   }
   
   a.article-title:hover {
-    color: #428bca;
+    color: #3a80bd;
     text-decoration: none;
   }
   
