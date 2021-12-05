@@ -1,5 +1,4 @@
 body {
-    background-image: "{{ url_for('static', filename='/images/nh_4k_view_1.jpg') }}"; 
     background: #f7eded;
     color: #333333;
     margin-top: 5rem;
@@ -31,6 +30,7 @@ body {
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
+    box-shadow: 2px 2px 12px #4b5338;
     margin-bottom: 20px;
   }
 
@@ -59,7 +59,9 @@ body {
   .article-img {
     height: 65px;
     width: 65px;
-    margin-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 2px 2px 12px #4b5338;
   }
   
   .article-metadata {
